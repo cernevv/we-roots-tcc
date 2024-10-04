@@ -4,9 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <title>WeRoots</title>
 </head>
 <body>
+    <header>
+        <div class="logo">We Roots</div>
+        <div class="menu">
+            <button class="menu-btn">&#9776;</button>
+            <div class="cart-icon">🛒</div>
+        </div>
+    </header>
     
+    <main>
+        <h1>CARRINHO</h1>
+        <div class="products">
+            <div class="product">
+                <img src="carambola.png" alt="Carambola">
+                <h2>Carambola</h2>
+                <p>R$2,00</p>
+                <label for="carambola">Quantidade:</label>
+                <select id="carambola">
+                    <option value="1">1</option>
+                </select>
+            </div>
+            <div class="product">
+                <img src="banana.png" alt="Banana">
+                <h2>Banana</h2>
+                <p>R$2,00</p>
+                <label for="banana">Quantidade:</label>
+                <select id="banana">
+                    <option value="1">1</option>
+                </select>
+            </div>
+            <div class="product">
+                <img src="caju.png" alt="Caju">
+                <h2>Caju</h2>
+                <p>R$2,00</p>
+                <label for="caju">Quantidade:</label>
+                <select id="caju">
+                    <option value="1">1</option>
+                </select>
+            </div>
+            <div class="product">
+                <img src="espinafre.png" alt="Espinafre">
+                <h2>Espinafre</h2>
+                <p>R$2,00</p>
+                <label for="espinafre">Quantidade:</label>
+                <select id="espinafre">
+                    <option value="1">1</option>
+                </select>
+            </div>
+            <div class="product">
+                <img src="mamao.png" alt="Mamão">
+                <h2>Mamão</h2>
+                <p>R$2,00</p>
+                <label for="mamao">Quantidade:</label>
+                <select id="mamao">
+                    <option value="1">1</option>
+                </select>
+            </div>
+            <div class="product">
+                <img src="cenoura.png" alt="Cenoura">
+                <h2>Cenoura</h2>
+                <p>R$2,00</p>
+                <label for="cenoura">Quantidade:</label>
+                <select id="cenoura">
+                    <option value="1">1</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="summary">
+            <input type="text" placeholder="Insira seu CEP">
+            <button>Calcular</button>
+            <div class="summary-text">
+                <p>Quantidade(s): 3</p>
+                <p>Valor Total: R$6,00</p>
+                <p>Valor Total a se Pagar: R$7,00</p>
+            </div>
+        </div>
+        <button class="payment-btn">Continuar para Pagamento</button>
+
+        <div class="payment-methods">
+            <h2>Formas de Pagamento</h2>
+            <div class="payment-options">
+                <div class="credit-card">
+                    <h3>Cartão de Crédito</h3>
+                    <img src="visa.png" alt="Visa">
+                    <img src="mastercard.png" alt="Mastercard">
+                    <img src="hipercard.png" alt="Hipercard">
+                </div>
+                <div class="debit-card">
+                    <h3>Cartão de Débito</h3>
+                    <img src="visa.png" alt="Visa">
+                    <img src="mastercard.png" alt="Mastercard">
+                    <img src="hipercard.png" alt="Hipercard">
+                    <img src="pix.png" alt="Pix">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="logo">We Roots</div>
+        <p>Fale Conosco!</p>
+        <div class="social-media">
+            <img src="instagram.png" alt="Instagram">
+            <img src="whatsapp.png" alt="WhatsApp">
+            <img src="facebook.png" alt="Facebook">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
