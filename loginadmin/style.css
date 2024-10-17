@@ -12,7 +12,7 @@ body {
 header {
     background-color: #fff;
     padding: 10px;
-    border-bottom: 5px solid #2a5c3f;
+    border-bottom: 5px solid #2a5c3f; /* Linha verde no final do header */
 }
 
 .navbar {
@@ -25,7 +25,7 @@ header {
     font-size: 24px;
     background: none;
     border: none;
-    color: #285041;
+    color: #2a5c3f;
     cursor: pointer;
 }
 
@@ -42,22 +42,21 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-.login-box,
-.social-login {
-    background-color: #577d5b;
-    padding: 50px;
-    border-radius: 8px;
-    color: #fff;
-    margin: 0px;
-    width: 500px;
-    text-align: center;
+    height: 80vh;
 }
 
 .login-box {
-    background-color: #285041;
+    background-color: #3f614b;
+    padding: 60px;
+    border-radius: 8px;
+    color: #fff;
+    width: 500px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .login-form label {
@@ -74,47 +73,18 @@ header {
     border-radius: 4px;
 }
 
-.extras {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
 .login-btn {
     width: 100%;
     padding: 10px;
-    background-color: #2a5c3f;
-    color: #fff;
+    background-color: #fff;
+    color: #2a5c3f;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-weight: bold;
+    margin-top: 40px;
 }
 
-.social-login button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #3f614b;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.social-login .google {
-    background-color: #fff;
-}
-
-.social-login .twitter {
-    background-color: #fff;
-}
-
-.social-login .phone {
-    background-color: #fff;
-}
-
-.admin-link {
-    color: #fff;
-    font-size: 12px;
-    display: block;
-    margin-top: 10px;
+.login-btn:hover {
+    background-color: #244933;
 }
