@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+} */
+
+header {
+    background-color: #fff;
+    padding: 10px;
+    border-bottom: 5px solid #2a5c3f;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #3f614b;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.cart img {
+    width: 30px;
+}
+
+.produtos {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.produtos h1 {
+    font-size: 2.5em;
+    color: #2e7d32;
+}
+
+.produtos h1 span {
+    color: #ff5722;
+}
+
+.categoria {
+    margin: 40px 0;
+}
+
+.categoria h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.produtos-lista {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.produto-item {
+    text-align: center;
+    width: 150px;
+}
+
+.produto-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.produto-item p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #2e7d32;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
