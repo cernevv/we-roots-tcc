@@ -6,7 +6,7 @@ function validateName() {
   const name = nameClient.value.trim();
   if (name === "") {
     error[0].classList.add("error");
-    error[0].innerText = "Type a valid value";
+    error[0].innerText = "Digite um valor válido";
     nameClient.style.border = "1px solid red";
     return false;
   }
@@ -22,7 +22,7 @@ function validateCardNumber() {
   const cardNumber = numberClient.value.trim().replace(/\s/g, "");
   if (cardNumber === "") {
     error[1].classList.add("error");
-    error[1].innerText = "Type a valid value";
+    error[1].innerText = "Digite um valor válido";
     numberClient.style.border = "1px solid red";
     return false;
   }
@@ -47,7 +47,7 @@ function validateExpirationDate() {
     year < anoAtual
   ) {
     error[2].classList.add("error");
-    error[2].innerText = "Type a valid value";
+    error[2].innerText = "Digite um valor válido";
     monthVenc.style.border = "1px solid red";
     yearVenc.style.border = "1px solid red";
     return false;
@@ -65,7 +65,7 @@ function validateCVC() {
   const cvcValue = cvc.value.trim();
   if (cvcValue === "" || cvcValue.length !== 3 || !/^\d+$/.test(cvcValue)) {
     error[3].classList.add("error");
-    error[3].innerText = "Type a valid value";
+    error[3].innerText = "Digite um valor válido";
     cvc.style.border = "1px solid red";
     return false;
   }
