@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preços e Opções</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f6f6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container principal */
+        .options-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            max-width: 800px;
+        }
+
+        /* Cada card de preço */
+        .option {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Checkbox estilizado */
+        .checkbox-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        input[type="checkbox"] {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background-color: #b2c3aa;
+            border: 2px solid #7a936e;
+            border-radius: 4px;
+            position: relative;
+            cursor: pointer;
+        }
+        input[type="checkbox"]:checked::before {
+            content: '✔';
+            color: white;
+            font-size: 14px;
+            position: absolute;
+            top: 0;
+            left: 4px;
+        }
+
+        /* Preço e título */
+        .price-info {
+            color: #3b6340;
+            margin-bottom: 20px;
+        }
+        .price-info p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #3b6340;
+        }
+        .price-info h2 {
+            font-size: 28px;
+            color: #2c472c;
+            margin: 0;
+        }
+
+        /* Botão de ação */
+        .action-button {
+            background-color: #b2c3aa;
+            color: #2c472c;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        .action-button:hover {
+            background-color: #7a936e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="options-container">
+        <!-- Opção 1 - Comprar Fruta -->
+        <div class="option">
+            <div class="checkbox-container">
+                <input type="checkbox" checked>
+            </div>
+            <div class="price-info">
+                <p>Preço fruta Kg:</p>
+                <h2>R$ 19,68</h2>
+            </div>
+            <button class="action-button">COMPRAR</button>
+        </div>
+
+        <!-- Opção 2 - Adicionar Planta -->
+        <div class="option">
+            <div class="checkbox-container">
+                <input type="checkbox">
+            </div>
+            <div class="price-info">
+                <p>Preço planta:</p>
+                <h2>R$ 69,90</h2>
+            </div>
+            <button class="action-button">ADICIONAR NA HORTA URBANA</button>
+        </div>
+    </div>
+
+</body>
+</html>
