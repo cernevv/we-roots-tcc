@@ -27,18 +27,16 @@ header {
     margin-left: 15px;
 }
 
+/* Slider */
 
-.slider{
-    padding-top: 50px;
-    width: 2000px;
-}
-
-/* Banner */
-
-.banner {
-    background-image: url();
+.slider {
+    background-image: url(imagens/sliderhome.png);
     background-size: cover; /* Ajusta para cobrir toda a área */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Impede a repetição */
     height: 600px; /* Defina a altura da seção conforme necessário */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 0px; /* Espaço interno */
 }
