@@ -43,6 +43,10 @@ header {
 /* Banner */
 
 .banner {
-    
+    background-image: url('imagens/banner\ \(2\).png');
+    background-size: cover; /* Ajusta para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição */
+    height: 600px; /* Defina a altura da seção conforme necessário */
 }
 
