@@ -246,7 +246,7 @@ h1 {
 .details-container {
     flex: 2;
     text-align: left;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 .details-container p {
@@ -261,9 +261,6 @@ h1 {
     margin: 30px auto;
     gap: 40px;
     padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .price-box {
@@ -316,12 +313,9 @@ h1 {
 }
 
 .details {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 40px auto;
     padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .details h3 {
