@@ -1,250 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>We Roots - Sustentável e Saudável</title>
-    <style>
-        /* Estilos básicos para layout */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <title>Exemplo de Header</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="shortcut icon" href="/assets/logo pequeno.png" type="image/x-icon">
 
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        header {
-            background-color: #29412F;
-            color: white;
-            padding: 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        /* Logo e Ícone de Menu */
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo img {
-            width: 50px;
-            height: auto;
-            margin-right: 10px;
-        }
-
-        .hamburger {
-            display: none;
-            cursor: pointer;
-            flex-direction: column;
-        }
-
-        .hamburger div {
-            width: 25px;
-            height: 3px;
-            background-color: white;
-            margin: 4px;
-        }
-
-        /* Menu */
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav ul li {
-            padding: 5px 10px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-        }
-
-        /* Banner Principal */
-        .banner {
-            background-size: cover;
-            background-position: center;
-            height:400px;
-            width: 1500px;
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            flex-direction: column;
-            padding-top: 300px;
-        }
-
-        .banner h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-
-        .banner p {
-            font-size: 24px;
-        }
-
-        /* Seção de Produtos */
-        .produtos {
-            padding: 40px;
-            text-align: center;
-        }
-
-        .produtos h2 {
-            margin-bottom: 30px;
-            font-size: 32px;
-        }
-
-        .produtos .categoria {
-            display: inline-block;
-            margin: 0 20px;
-        }
-
-        .produtos .categoria img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-        }
-
-        .produtos .categoria p {
-            margin-top: 10px;
-            font-size: 18px;
-        }
-
-        /* Rodapé */
-        footer {
-            background-color: #29412F;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        footer ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            padding-top: 10px;
-        }
-
-        footer ul li {
-            display: inline;
-        }
-
-        footer ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        /* Responsividade */
-        @media (max-width: 768px) {
-            .hamburger {
-                display: flex;
-            }
-
-            nav ul {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 60px;
-                right: 0;
-                background-color: #29412F;
-                width: 200px;
-            }
-
-            nav ul li {
-                text-align: right;
-                padding: 10px;
-            }
-
-            nav.active ul {
-                display: flex;
-            }
-        }
-    </style>
 </head>
-
 <body>
 
-    <!-- Cabeçalho com logo e ícone do menu -->
     <header>
-        <div class="logo">
-            <img src="https://via.placeholder.com/50" alt="Logo We Roots">
-            <h1>We Roots</h1>
-        </div>
-
-        <!-- Ícone de hambúrguer para dispositivos móveis -->
-        <div class="hamburger" id="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-
-        <!-- Menu de navegação -->
-        <nav id="nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+        <nav class="navbar">
+            <button class="menu-toggle">&#9776;</button>
+            <div class="logo">
+                <img src="/assets/logo pequeno.png" alt="Logo">
+            </div>
+            <div class="icons">
+                <a href="#"><img src="/assets/carrinho.png" alt="Carrinho"></a>
+                <a href="#"><img src="/assets/usuário.png" alt="Perfil"></a>
+            </div>
         </nav>
     </header>
 
-    <!-- Banner Principal -->
-    <div class="banner">
-        <img src="/assets/sliderhome.png" alt="slide">
+    <div class="slider">
+        <img src="/assets/sliderhome.png" alt="">
     </div>
 
-    <!-- Seção de Produtos -->
-    <section class="produtos">
-        <h2>Os detalhes da We Roots que fazem a diferença</h2>
-        <div class="categoria">
-            <img src="/assets/legumes.png" alt="Legumes">
-            <p>Legumes</p>
-        </div>
-        <div class="categoria">
-            <img src="/assets/verduras.png" alt="Verduras">
-            <p>Verduras</p>
-        </div>
-        <div class="categoria">
-            <img src="/assets/frutas.png" alt="Frutas">
-            <p>Frutas</p>
-        </div>
-        <div class="categoria">
-            <img src="/assets/sementes.png" alt="Sementes">
-            <p>Sementes</p>
-        </div>
-    </section>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>Fale Conosco!</p>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Sobre Nós</a></li>
-        </ul>
-    </footer>
-
-    <!-- Script JavaScript -->
-    <script>
-        // Controle do menu mobile
-        const hamburger = document.getElementById('hamburger');
-        const nav = document.getElementById('nav');
-
-        hamburger.addEventListener('click', function () {
-            nav.classList.toggle('active');
-        });
-    </script>
 
 </body>
-
 </html>
