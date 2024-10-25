@@ -30,6 +30,7 @@ header {
 /* Slider */
 
 .slider {
+    margin-top: 50px;
     background-image: url(imagens/sliderhome.png);
     background-size: cover; /* Ajusta para cobrir toda a área */
     background-position: center; /* Centraliza a imagem */
@@ -39,4 +40,8 @@ header {
     align-items: center; /* Centraliza verticalmente */
     justify-content: center; /* Centraliza horizontalmente */
     padding: 0px; /* Espaço interno */
+}
+
+.legumes{
+     
 }
