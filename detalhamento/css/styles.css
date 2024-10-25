@@ -1,3 +1,5 @@
+/* Header */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,10 +12,9 @@ body {
 }
 
 header {
-    background-color: #fff;
+    background-color: #f4f4f4;
     padding: 10px;
-    border-bottom: 5px solid #2a5c3f; /* Linha verde no final do header */
-    align-items: center;
+    border-bottom: 4px solid #2a5c3f; /* Linha verde no final do header */
 }
 
 .navbar {
@@ -23,17 +24,19 @@ header {
 }
 
 .menu-toggle {
-    font-size: 35px;
+    font-size: 24px;
     background: none;
     border: none;
     color: #2a5c3f;
     cursor: pointer;
 }
 
+.logo img {
+    width: 50px;
+}
 
 .icons img {
-    width: 44px;
-    padding: 10px;
+    width: 30px;
     margin-left: 15px;
 }
 
@@ -276,8 +279,8 @@ img .circle-inner {
 }
 
 .checkbox {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     background-color: #42765353;
     display: flex;
     align-items: center;
@@ -348,7 +351,6 @@ body {
 
 footer {
     background-color: white;
-    border-top: 4px solid #285041;
     padding: 25px;
 }
 
@@ -356,8 +358,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 900px;
+    max-width: 100%;
     margin: 0 auto;
+    border-top: 4px solid #2a5c3f; /* Linha verde no final do header */
 }
 
 .logo-container {
@@ -367,6 +370,7 @@ footer {
 img.logo2 {
     width: 160px;
     height: 155px;
+    margin: 20px;
 }
 
 .contact-container {
@@ -432,4 +436,3 @@ img.logo2 {
     font-size: 16px;
     font-weight: bold;
 }
-
