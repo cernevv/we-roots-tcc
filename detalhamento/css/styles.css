@@ -37,6 +37,7 @@ header {
     margin-left: 15px;
 }
 
+
 /* Estilos da seção de preços */
         .options-container {
             display: flex;
@@ -172,12 +173,13 @@ h1 {
 
 .content {
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: center;
+    padding-top: 3%;
 }
 
 .image-container {
-    flex: 1;
+    flex: 2;
     display: flex;
     justify-content: center;
 }
@@ -193,8 +195,8 @@ h1 {
     border: 2px solid #4999a3;
 }
 
-.circle img {
-    width: 120px;
+img .circle-inner {
+    width: 300px;
 }
 
 .text-container {
@@ -219,8 +221,8 @@ h1 {
 
 .circle-container {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 355px;
     background-color: #a8b9a2;
     border-radius: 50%;
     display: flex;
@@ -229,8 +231,8 @@ h1 {
 }
 
 .circle-inner {
-    width: 250px;
-    height: 250px;
+    width:275px;
+    height: 275px;
     background-color: #738f73;
     border-radius: 50%;
     display: flex;
@@ -239,7 +241,7 @@ h1 {
 }
 
 .circle-inner img {
-    width: 150px;
+    width: 200px;
     height: auto;
     object-fit: contain;
 }
@@ -252,6 +254,9 @@ h1 {
 .details-container p {
     margin-bottom: 10px;
     text-align: left;
+}
+.titulo  {
+    color: #427653;
 }
 
 .options-container {
@@ -271,14 +276,14 @@ h1 {
 }
 
 .checkbox {
-    width: 30px;
-    height: 30px;
-    background-color: #DDE5D9;
+    width: 50px;
+    height: 50px;
+    background-color: #42765353;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .checkmark {
