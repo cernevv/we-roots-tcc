@@ -1,3 +1,5 @@
+/* Header */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,10 +12,9 @@ body {
 }
 
 header {
-    background-color: #fff;
+    background-color: #f4f4f4;
     padding: 10px;
-    border-bottom: 5px solid #2a5c3f; /* Linha verde no final do header */
-    align-items: center;
+    border-bottom: 4px solid #2a5c3f; /* Linha verde no final do header */
 }
 
 .navbar {
@@ -23,19 +24,22 @@ header {
 }
 
 .menu-toggle {
-    font-size: 35px;
+    font-size: 24px;
     background: none;
     border: none;
     color: #2a5c3f;
     cursor: pointer;
 }
 
+.logo img {
+    width: 50px;
+}
 
 .icons img {
-    width: 44px;
-    padding: 10px;
+    width: 30px;
     margin-left: 15px;
 }
+
 
 /* Estilos da seção de preços */
         .options-container {
@@ -172,12 +176,13 @@ h1 {
 
 .content {
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: center;
+    padding-top: 3%;
 }
 
 .image-container {
-    flex: 1;
+    flex: 2;
     display: flex;
     justify-content: center;
 }
@@ -193,8 +198,8 @@ h1 {
     border: 2px solid #4999a3;
 }
 
-.circle img {
-    width: 120px;
+img .circle-inner {
+    width: 300px;
 }
 
 .text-container {
@@ -219,8 +224,8 @@ h1 {
 
 .circle-container {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 355px;
     background-color: #a8b9a2;
     border-radius: 50%;
     display: flex;
@@ -229,8 +234,8 @@ h1 {
 }
 
 .circle-inner {
-    width: 250px;
-    height: 250px;
+    width:275px;
+    height: 275px;
     background-color: #738f73;
     border-radius: 50%;
     display: flex;
@@ -239,7 +244,7 @@ h1 {
 }
 
 .circle-inner img {
-    width: 150px;
+    width: 200px;
     height: auto;
     object-fit: contain;
 }
@@ -252,6 +257,9 @@ h1 {
 .details-container p {
     margin-bottom: 10px;
     text-align: left;
+}
+.titulo  {
+    color: #427653;
 }
 
 .options-container {
@@ -273,12 +281,12 @@ h1 {
 .checkbox {
     width: 30px;
     height: 30px;
-    background-color: #DDE5D9;
+    background-color: #42765353;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .checkmark {
@@ -343,7 +351,6 @@ body {
 
 footer {
     background-color: white;
-    border-top: 4px solid #285041;
     padding: 25px;
 }
 
@@ -351,8 +358,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 900px;
+    max-width: 100%;
     margin: 0 auto;
+    border-top: 4px solid #2a5c3f; /* Linha verde no final do header */
 }
 
 .logo-container {
@@ -362,6 +370,7 @@ footer {
 img.logo2 {
     width: 160px;
     height: 155px;
+    margin: 20px;
 }
 
 .contact-container {
@@ -427,4 +436,3 @@ img.logo2 {
     font-size: 16px;
     font-weight: bold;
 }
-
