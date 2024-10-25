@@ -65,6 +65,7 @@ header {
   
   .content-row.reverse {
     flex-direction: row-reverse;
+    margin-left: 130px;
   }
   
   .content-image {
