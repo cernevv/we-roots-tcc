@@ -42,6 +42,41 @@ header {
     padding: 0px; /* Espaço interno */
 }
 
-.legumes{
-     
-}
+.container {
+    display: flex;
+    gap: 1px; /* espaço entre os elementos */
+  }
+  .box {
+    width: 100px;
+    height: 100px;
+    
+    text-align:right;
+    padding-left: 215px;
+    padding-top: 50px;
+    font: bold;
+
+  }
+
+  .detalhes{
+    display: flex;
+padding-top: 200px;
+font-size: 15px;
+gap: 20px;
+  }
+
+  .We{
+    color: #285041;
+  }
+
+  .secundario{
+    font-size: 10px;
+  }
+
+.primario {
+    flex-direction: column; /* Alinha os textos verticalmente */
+    justify-content: center;
+  }
+  .paragrafo {
+    display: flex;
+    flex-direction: column;
+  }
