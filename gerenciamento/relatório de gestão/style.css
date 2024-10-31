@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
 /* Header */
 * {
   margin: 0;
@@ -72,4 +79,19 @@ header {
 .cart-icon {
   font-size: 40px;
   color: white;
+}
+
+.title {
+  color: #285041;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.line {
+  width: 100%;
+  background-color: #285041;
+  height: 1px;
+  margin-top: 10px;
 }
