@@ -73,7 +73,7 @@
                     <p>Couve</p>
                 </div>
                 <div class="produto-item">
-                    <img src="imagens inverno/espinafre.png"Espinafre">
+                    <img src="imagens inverno/espinafre.png".lk,l[´ç] alt= "Espinafre">
                     <p>Espinafre</p>
                 </div>
                 <div class="produto-item">
@@ -111,19 +111,69 @@
     </section>
 
     <footer>
-        <div class="contato">
-            <h2>Fale Conosco!</h2>
-            <div class="social-icons">
-                <a href="#"><img src="imagens inverno/logowhatsapp.png" alt="WhatsApp"></a>
-                <a href="#"><img src="imagens inverno/logoinstagram.png" alt="Instagram"></a>
-                <a href="#"><img src="imagens inverno/logofacebook.png" alt="Facebook"></a>
-                <a href="#"><img src="imagens inverno/mensagem.png" alt="Email"></a>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="imagens/logo2.png" alt="WeRoots Logo">
             </div>
-            <form action="#">
-                <input type="email" placeholder="Informe seu e-mail">
-                <button type="submit">Enviar</button>
-            </form>
+            <div class="contact-info">
+                <h2>Fale Conosco!</h2>
+                <div class="social-icons">
+                    <a href="#"><img src="imagens/logofacebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="imagens/logoinstagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="imagens/logowhatsapp.png" alt="WhatsApp"></a>
+                    <a href="#"><img src="imagens/mensagem.png" alt="E-mail"></a>
+                </div>
+                <input type="email" placeholder="Informe seu E-mail">
+            </div>
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">Produtos</a>
+                <a href="#">Sobre nós</a>
+            </div>
         </div>
     </footer>
+    <!-- <script>
+        // URL da Fruityvice API
+        const baseUrl = "https://www.fruityvice.com/api/fruit/all";
+
+        // Função para buscar frutas e exibir na página
+        async function fetchFruits() {
+            try {
+                const response = await fetch(baseUrl);
+                if (response.ok) {
+                    const fruitsData = await response.json();
+                    displayFruits(fruitsData);
+                } else {
+                    console.error("Erro ao acessar a API:", response.status);
+                }
+            } catch (error) {
+                console.error("Erro ao buscar dados:", error);
+            }
+        }
+
+        // Função para exibir frutas na seção "Frutas"
+        function displayFruits(fruits) {
+            const frutasLista = document.getElementById("frutas-lista");
+            frutasLista.innerHTML = ""; // Limpa o container antes de adicionar as frutas
+
+            fruits.slice(0, 4).forEach(fruit => { // Exemplo com as 4 primeiras frutas
+                const fruitItem = document.createElement("div");
+                fruitItem.classList.add("produto-item");
+
+                fruitItem.innerHTML = `
+                    <img src="https://via.placeholder.com/150" alt="${fruit.name}">
+                    <p>${fruit.name}</p>
+                    <p>Calorias: ${fruit.nutritions.calories} kcal</p>
+                    <p>Açúcar: ${fruit.nutritions.sugar} g</p>
+                `;
+
+                frutasLista.appendChild(fruitItem);
+            });
+        }
+
+        // Chama a função de busca ao carregar a página
+        fetchFruits();
+    </script> -->
+
 </body>
 </html>

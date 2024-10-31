@@ -112,7 +112,7 @@ nav ul li a {
     color: #333;
 }
 
-footer {
+/* footer {
     background-color: #f4f4f4;
     padding: 20px;
     text-align: center;
@@ -150,4 +150,39 @@ form button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+} */
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 5px solid #2a5c3f;
 }
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-links a {
+    display: block;
+    margin: 5px 0;
+    color: #2a5c3f;
+    text-decoration: none;
+}
+
