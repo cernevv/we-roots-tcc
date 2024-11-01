@@ -17,4 +17,4 @@ if ($conn->connect_error) {
 // Fechar a conexão (opcional, normalmente é feito após usar a conexão)
 // $conn->close();
 
-?>
+?>  
