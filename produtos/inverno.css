@@ -1,153 +1,188 @@
+/* Resetando margens e paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
+/* Configuração geral */
 body {
-    background-color: #fff;
-    color: #333;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #f4f4f4;
-} */
-
-header {
-    background-color: #fff;
+header, footer {
+    width: 100%;
+    background-color: #f8f8f8;
     padding: 10px;
-    border-bottom: 5px solid #2a5c3f;
-}
-
-.navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
-.menu-toggle {
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header .menu-toggle {
     font-size: 24px;
     background: none;
     border: none;
-    color: #3f614b;
-    cursor: pointer;
 }
 
-.logo img {
-    width: 50px;
+header .logo img {
+    height: 50px;
 }
 
-.logo img {
-    width: 100px;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-.cart img {
-    width: 30px;
+header .icons img {
+    width: 24px;
+    margin-left: 20px;
 }
 
 .produtos {
+    width: 100%;
     text-align: center;
-    margin: 20px 0;
+    padding: 20px;
 }
 
 .produtos h1 {
-    font-size: 2.5em;
-    color: #2e7d32;
+    font-size: 28px;
+    color: #2a7c2b;
 }
 
 .produtos h1 span {
-    color: #ff5722;
+    color: #888;
+    font-weight: normal;
 }
 
 .categoria {
-    margin: 40px 0;
+    margin-top: 20px;
 }
 
 .categoria h2 {
-    font-size: 2em;
+    font-size: 22px;
     color: #333;
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 10px;
 }
 
 .produtos-lista {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .produto-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    width: 150px;
 }
 
+/* Estilo dos círculos ao redor das imagens */
 .produto-item img {
     width: 100px;
     height: 100px;
-    object-fit: cover;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .produto-item p {
     margin-top: 10px;
-    font-size: 1em;
+    font-weight: bold;
     color: #333;
 }
 
-footer {
-    background-color: #f4f4f4;
-    padding: 20px;
+/* Estilo do banner */
+.banner {
+    width: 100%;
+    height: 200px;
+    background-image: url('imagens inverno/Grey and White Minimalist Twitter Header (4) 1.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
     text-align: center;
 }
 
-.contato h2 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
+.banner h1 {
+    font-size: 24px;
+}
+
+.banner p {
+    font-size: 18px;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #2a7c2b;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    height: 50px;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .social-icons a {
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 .social-icons img {
-    width: 30px;
+    width: 24px;
 }
 
-form {
-    margin-top: 20px;
-}
-
-form input {
-    padding: 10px;
-    width: 250px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-right: 10px;
-}
-
-form button {
-    padding: 10px 20px;
-    background-color: #2e7d32;
+.footer-links a {
     color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do campo de e-mail */
+.contact-info input[type="email"] {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 20px;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+}
+
+.contact-info input[type="email"]::placeholder {
+    color: #555;
 }
