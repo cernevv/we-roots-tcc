@@ -1,153 +1,274 @@
+/* Header */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+  
+  body {
     font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #fff;
-    color: #333;
-}
-
-/* header {
+  }
+  
+  header {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 0;
+  }
+  
+  
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #f4f4f4;
-} */
-
-header {
-    background-color: #fff;
-    padding: 10px;
-    border-bottom: 5px solid #2a5c3f;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu-toggle {
-    font-size: 24px;
-    background: none;
-    border: none;
-    color: #3f614b;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .menu-icon {
     cursor: pointer;
-}
-
-.logo img {
-    width: 50px;
-}
-
-.logo img {
-    width: 100px;
-}
-
-nav ul {
     display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-.cart img {
-    width: 30px;
-}
-
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .menu-icon span {
+    display: flex;
+    width: 25px;
+    height: 3px;
+    background-color: #285041;
+  }
+  
+  .logo img {
+    width: 80px;
+    height: auto;
+  }
+  
+  .nav-icons {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .nav-icons img {
+    width: 24px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 0 20px;
+    }
+  
+    .logo img {
+      width: 30px;
+    }
+  
+    .nav-icons img {
+      width: 20px;
+    }
+  }
+  
+  
+  .cart-icon {
+    font-size: 40px;
+    color: white;
+  }
 .produtos {
+    width: 100%;
     text-align: center;
-    margin: 20px 0;
+    padding: 20px;
 }
 
 .produtos h1 {
-    font-size: 2.5em;
-    color: #2e7d32;
+    font-size: 28px;
+    color: #2a7c2b;
 }
 
 .produtos h1 span {
-    color: #ff5722;
+    color: #888;
+    font-weight: normal;
 }
 
 .categoria {
-    margin: 40px 0;
+    margin-top: 20px;
 }
 
 .categoria h2 {
-    font-size: 2em;
+    font-size: 22px;
     color: #333;
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 10px;
 }
 
 .produtos-lista {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .produto-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    width: 150px;
 }
 
+/* Estilo dos círculos ao redor das imagens */
 .produto-item img {
     width: 100px;
     height: 100px;
-    object-fit: cover;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .produto-item p {
     margin-top: 10px;
-    font-size: 1em;
+    font-weight: bold;
     color: #333;
 }
 
-footer {
-    background-color: #f4f4f4;
-    padding: 20px;
+/* Estilo do banner */
+.banner {
+    width: 100%;
+    height: 10%;
+    /* background-image: url('imagens inverno/Grey and White Minimalist Twitter Header (4) 1.png'); */
+    /* background-size: cover; */
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: #fff; */
     text-align: center;
 }
 
-.contato h2 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
+.banner h1 {
+    font-size: 24px;
 }
 
-.social-icons a {
-    margin: 0 10px;
+.banner p {
+    font-size: 18px;
 }
 
-.social-icons img {
-    width: 30px;
-}
+/* footer */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  footer {
+    background-color: #f4f4f4;
+    /* padding: 25px; */
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    border-top: 4px solid #2a5c3f; /* Linha verde no final do header */
+  }
+  
+  .logo-container {
+    flex: 1;
+  }
+  
+  img.logo2 {
+    width: 160px;
+    height: 155px;
+    margin: 20px;
+  }
+  
+  .contact-container {
+    flex: 2;
+    text-align: center;
+  }
+  
+  .contact-container h2 {
+    color: #285041;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 35px;
+  }
+  
+  .social-icons a .icon {
+    width: 37px;
+    height: 40px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+  }
+  
+  .social-icons a .icon img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .social-icons a:hover .icon {
+    border-color: #285041; /* Change the border color on hover */
+  }
+  
+  .email-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 300px;
+    text-align: left;
+    background-color: #e0e0e0;
+  }
+  
+  .footer-nav {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+  }
+  
+  .footer-nav a {
+    color: #285041;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }     
 
-form {
-    margin-top: 20px;
-}
+  .h2footer {
+    margin-top: 10px;
+  }
 
-form input {
-    padding: 10px;
-    width: 250px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-right: 10px;
-}
+  .title {
+    color: #285041;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
 
-form button {
-    padding: 10px 20px;
-    background-color: #2e7d32;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+  .line {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #285041;
+    height: 1px;
+    margin-top: 0px;
+  }
