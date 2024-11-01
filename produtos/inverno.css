@@ -112,6 +112,42 @@ nav ul li a {
     color: #333;
 }
 
+
+/* Banner */
+.banner {
+    background-image: url('caminho/para/sua-imagem.jpg'); /* Troque pelo caminho da imagem do banner */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.banner-text p {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+}
+
+/* Overlay (opcional, para um efeito de escurecimento) */
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); Ajuste a opacidade conforme necessário
+}
+
 /* footer {
     background-color: #f4f4f4;
     padding: 20px;
