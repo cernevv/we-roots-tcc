@@ -1,250 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>We Roots - Sustentável e Saudável</title>
-    <style>
-        /* Estilos básicos para layout */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <title>We Roots</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="shortcut icon" href="/assets/logo pequeno.png" type="image/x-icon">
 
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        header {
-            background-color: #29412F;
-            color: white;
-            padding: 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        /* Logo e Ícone de Menu */
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo img {
-            width: 50px;
-            height: auto;
-            margin-right: 10px;
-        }
-
-        .hamburger {
-            display: none;
-            cursor: pointer;
-            flex-direction: column;
-        }
-
-        .hamburger div {
-            width: 25px;
-            height: 3px;
-            background-color: white;
-            margin: 4px;
-        }
-
-        /* Menu */
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav ul li {
-            padding: 5px 10px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-        }
-
-        /* Banner Principal */
-        .banner {
-            background-size: cover;
-            background-position: center;
-            height:400px;
-            width: 1500px;
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            flex-direction: column;
-            padding-top: 300px;
-        }
-
-        .banner h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-
-        .banner p {
-            font-size: 24px;
-        }
-
-        /* Seção de Produtos */
-        .produtos {
-            padding: 40px;
-            text-align: center;
-        }
-
-        .produtos h2 {
-            margin-bottom: 30px;
-            font-size: 32px;
-        }
-
-        .produtos .categoria {
-            display: inline-block;
-            margin: 0 20px;
-        }
-
-        .produtos .categoria img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-        }
-
-        .produtos .categoria p {
-            margin-top: 10px;
-            font-size: 18px;
-        }
-
-        /* Rodapé */
-        footer {
-            background-color: #29412F;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        footer ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            padding-top: 10px;
-        }
-
-        footer ul li {
-            display: inline;
-        }
-
-        footer ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        /* Responsividade */
-        @media (max-width: 768px) {
-            .hamburger {
-                display: flex;
-            }
-
-            nav ul {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 60px;
-                right: 0;
-                background-color: #29412F;
-                width: 200px;
-            }
-
-            nav ul li {
-                text-align: right;
-                padding: 10px;
-            }
-
-            nav.active ul {
-                display: flex;
-            }
-        }
-    </style>
 </head>
-
 <body>
 
-    <!-- Cabeçalho com logo e ícone do menu -->
     <header>
-        <div class="logo">
-            <img src="https://via.placeholder.com/50" alt="Logo We Roots">
-            <h1>We Roots</h1>
-        </div>
-
-        <!-- Ícone de hambúrguer para dispositivos móveis -->
-        <div class="hamburger" id="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-
-        <!-- Menu de navegação -->
-        <nav id="nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            
+              <!-- Menu hamburguer -->
+              <div class="menu" id="menu">
+                <a href="/sobre nós/sobrenós.html">Sobre nós</a>
+                <a href="/produtos/inverno.html">Produtos</a>
+                <a href="/login/login.html">Sua conta</a>
+              </div>
+            
+              <script>
+                function toggleMenu() {
+                  const menu = document.getElementById('menu');
+                  menu.classList.toggle('show');
+                }
+              </script>
+            <div class="logo">
+                <a href="../home/home.html"><img src="/assets/logo pequeno.png" alt="Logo"></a>
+            </div>
+            <div class="icons">
+                <a href="../carrinho/index.html"><img src="/assets/carrinho.png" alt="Carrinho"></a>
+                <a href="../login/login.html"><img src="/assets/usuário.png" alt="Perfil"></a>
+            </div>
         </nav>
     </header>
 
-    <!-- Banner Principal -->
-    <div class="banner">
-        <img src="/assets/sliderhome.png" alt="slide">
+    <div class="slider">
+        
     </div>
 
-    <!-- Seção de Produtos -->
-    <section class="produtos">
-        <h2>Os detalhes da We Roots que fazem a diferença</h2>
-        <div class="categoria">
-            <img src="/assets/legumes.png" alt="Legumes">
-            <p>Legumes</p>
-        </div>
-        <div class="categoria">
-            <img src="/assets/verduras.png" alt="Verduras">
-            <p>Verduras</p>
-        </div>
-        <div class="categoria">
-            <img src="/assets/frutas.png" alt="Frutas">
-            <p>Frutas</p>
-        </div>
-        <div class="categoria">
-            <img src="/assets/sementes.png" alt="Sementes">
-            <p>Sementes</p>
-        </div>
-    </section>
+    <div class="container">
+        <div class="box" class="uniquifier">Legumes <a href="#"><img src="imagens/legumes.png" alt=""></a></div>
+        <div class="box" class="uniquifier">Verduras <a href="#"><img src="imagens/verduras.png" alt=""></a></div>
+        <div class="box" class="uniquifier">Frutas <a href="#"><img src="imagens/frutas.png" alt=""></a></div>
+        <div class="box" class="uniquifier">Sementes <a href="#"><img src="imagens/sementes.png" alt=""></a></div>
+    </div>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>Fale Conosco!</p>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Sobre Nós</a></li>
-        </ul>
-    </footer>
 
-    <!-- Script JavaScript -->
-    <script>
-        // Controle do menu mobile
-        const hamburger = document.getElementById('hamburger');
-        const nav = document.getElementById('nav');
+    <div class="detalhes">
+        <img src="imagens/home.png" alt="">
+        <div class="paragrafo">
+            <h1 class="primario">Os detalhes da <strong class="We">WEROOTS</strong> que fazem a diferença</h1>
+            <div class="secundario">
+                <h2><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12h5v5h-5zm7-9h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m0 2v2H5V5zM5 19V9h14v10z"/></svg> Uma rede de fazendas urbanas que produz hortaliças 365 dias no ano</h2>
+               <h2> <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M24 7.8C23.6 4.5 20.9 2 17.5 2c-1.7 0-3.4.7-4.6 1.9c-.7.7-1.2 1.4-1.5 2.3L17 9.9v.1h3v2h-3v2h3v2h-3v2h3v2h-3v2h7zM13.3 7c.6-1.8 2.3-3 4.2-3s3.6 1.2 4.2 3zM0 11v11h5v-7h5v7h5V11L7.5 6z"/></svg> O cultivo é feito por hidroponia, em estufas de alta tecnologia e ambiente controlado para que cresçam saudáveis e sem agrotóxicos</h2>
+               <h2> <svg xmlns="http://www.w3.org/2000/svg" width="2.25em" height="2em" viewBox="0 0 576 512"><path fill="currentColor" d="M288 256c53 0 96-42.1 96-94c0-40-57.1-120.7-83.2-155.6c-6.4-8.5-19.2-8.5-25.6 0C249.1 41.3 192 122 192 162c0 51.9 43 94 96 94m277.3 72.1c-11.8-10.7-30.2-10-42.6 0L430.3 402c-11.3 9.1-25.4 14-40 14H272c-8.8 0-16-7.2-16-16s7.2-16 16-16h78.3c15.9 0 30.7-10.9 33.3-26.6c3.3-20-12.1-37.4-31.6-37.4H192c-27 0-53.1 9.3-74.1 26.3L71.4 384H16c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16h356.8c14.5 0 28.6-4.9 40-14L564 377c15.2-12.1 16.4-35.3 1.3-48.9"/></svg> A produção é 28 vezes maior que o modelo convencional e o consumo de água é 90% menor</h2>
+            </div>
+       </div>
+    </div>
 
-        hamburger.addEventListener('click', function () {
-            nav.classList.toggle('active');
-        });
-    </script>
+    <h1 class="ano">Escolha sua horta de acordo com a época do ano</h1>
+
+
+    <div class="seasons-container">
+        <div class="season">
+            <div class="season-icon"><a href="/produtos/verão.html"><img src="/home/imagens/verão.png" alt=""></a></div> <!-- Replace with SVG if available -->
+            <div class="season-label">Verão</div>
+        </div>
+        <div class="season">
+            <div class="season-icon"><a href="/produtos/inverno.html"><img src="/home/imagens/inverno.png" alt=""></a></div> <!-- Replace with SVG if available -->
+            <div class="season-label">Inverno</div>
+        </div>
+        <div class="season">
+            <div class="season-icon"><a href="/produtos/primavera.html"><img src="/home/imagens/primavera.png" alt=""></a></div> <!-- Replace with SVG if available -->
+            <div class="season-label">Primavera</div>
+        </div>
+        <div class="season">
+            <div class="season-icon"><a href="/produtos/outono.html"><img src="/home/imagens/outono.png" alt=""></a></div> <!-- Replace with SVG if available -->
+            <div class="season-label">Outono</div>
+        </div>
+    </div>
 
 </body>
+
+<div class="footer-container">
+    <div class="logo-container">
+        <img src="/home/imagens/logo2.png" alt="We Roots Logo" class="logo2">
+    </div>
+    <div class="contact-container">
+        <h2>Fale Conosco!</h2>
+        <div class="social-icons">
+            <a href="#"><div class="icon"><img src="/home/imagens/twitter.png" alt="X"></div></a>
+            <a href="#"><div class="icon"><img src="/home/imagens/insta.png" alt="Instagram"></div></a>
+            <a href="#"><div class="icon"><img src="/home/imagens/whats.png" alt="WhatsApp"></div></a>
+            <a href="#"><div class="icon"><img src="/home/imagens/face.png" alt="Facebook"></div></a>
+            <a href="#"><div class="icon"><img src="/home/imagens/email.png" alt="Email"></div></a>
+        </div>
+        <input type="email" placeholder="Informe seu E-mail" class="email-input">
+    </div>
+    <nav class="footer-nav">
+        <a href="home.html">Home</a>
+        <a href="/produtos/inverno.html">Produtos</a>
+        <a href="/sobre nós/sobrenós.html">Sobre nós</a>
+    </nav>
+</div>
+</footer>
 
 </html>
