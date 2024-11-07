@@ -264,11 +264,9 @@
   }
 
   .line {
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+    width: 25%; 
+    margin: 5px auto; 
     background-color: #285041;
     height: 1px;
-    margin-top: 0px;
-  }
+    ;
+}
