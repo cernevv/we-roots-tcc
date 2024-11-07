@@ -52,7 +52,7 @@ header {
     width: 100px;
     height: 100px;
     
-    text-align:right;
+    text-align: right;
     padding-left: 215px;
     padding-top: 60px;
     font: bold;
@@ -63,6 +63,10 @@ header {
     font-weight: 800;
     font-style: normal;
 
+  }
+
+  .linha{
+    color: #fff;
   }
 
   .detalhes{
@@ -135,6 +139,8 @@ gap: 20px;
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
+    padding-left: 250px;
+
   }
 
   .ano{

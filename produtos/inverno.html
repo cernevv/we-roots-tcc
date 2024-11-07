@@ -8,25 +8,41 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <nav class="navbar">
-            <button class="menu-toggle">&#9776;</button>
-            <div class="logo">
-                <img src="imagens inverno/logo.png" alt="Logo">
-            </div>
-            <div class="icons">
-                <a href="#"><img src="imagens inverno/cart-icon.png" alt="Carrinho"></a>
-                <a href="#"><img src="imagens inverno/user-icon.png" alt="Perfil"></a>
-            </div>
-        </nav>
-    </header>
+   <!-- HEADER -->
+   <header>
+    <nav class="navbar">
+      <div class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="logo">
+        <img src="imagens inverno/logo.png" alt="Logo">
+      </div>
+      <div class="nav-icons">
+        <img src="imagens inverno/cart-icon.png" alt="Carrinho">
+        <img src="imagens inverno/user-icon.png" alt="Usuário">
+      </div>
+    </nav>
+  </header>
 
     <!-- Produtos -->
     <section class="produtos">
-        <h1>PRODUTOS <span>INVERNO</span></h1>
 
-        <div class="categoria">
+        <div class="title">
+            <h1>PRODUTOS</h1>
+            <div class="line"></div>
+            <h2>INVERNO</h2>
+             
+        </div>
+         <!-- Carrossel de benefícios -->
+         <div class="beneficios-carousel">  
+            <div class="carousel-container">
+                <button class="carousel-button prev" onclick="moverCarousel(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+            <div class="categoria">
             <h2>Frutas</h2>
             <div class="produtos-lista">
                 <div class="produto-item">
@@ -94,33 +110,33 @@
     </section>
 
      <!-- Banner -->
-     <section class="banner">
-        <div class="banner-text">
-            <h1>PRODUTOS DISPONÍVEIS</h1>
-            <p>NO INVERNO</p>
-        </div>
-    </section>
+     
+         <img class="banner" src="imagens inverno/Grey and White Minimalist Twitter Header (4) 1.png" alt=""> 
+        
+    
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="imagens inverno/logo2.png" alt="WeRoots Logo">
-            </div>
-            <div class="contact-info">
-                <h2>Fale Conosco!</h2>
-                <div class="social-icons">
-                    <a href="#"><img src="imagens inverno/logofacebook.png" alt="Facebook"></a>
-                    <a href="#"><img src="imagens inverno/logoinstagram.png" alt="Instagram"></a>
-                    <a href="#"><img src="imagens inverno/logowhatsapp.png" alt="WhatsApp"></a>
-                    <a href="#"><img src="imagens inverno/mensagem.png" alt="E-mail"></a>
-                </div>
-                <input type="email" placeholder="Informe seu E-mail">
-            </div>
-            <div class="footer-links">
-                <a href="#">Home</a>
-                <a href="#">Produtos</a>
-                <a href="#">Sobre nós</a>
+   <!-- footer -->
+ <footer>
+    <div class="footer-container">
+      <div class="logo-container">
+          <img src="imagens inverno/logo2.png   " alt="We Roots Logo" class="logo2">
+      </div>
+      <div class="contact-container">
+          <h2 class="h2footer">Fale Conosco!</h2>
+          <div class="social-icons">
+              <a href="#"><div class="icon"><img src="imagens inverno/logotwitter.png" alt="X"></div></a>
+              <a href="#"><div class="icon"><img src="imagens inverno/logoinstagram.png" alt="Instagram"></div></a>
+              <a href="#"><div class="icon"><img src="imagens inverno/logowhatsapp.png" alt="WhatsApp"></div></a>
+              <a href="#"><div class="icon"><img src="imagens inverno/logofacebook.png" alt="Facebook"></div></a>
+              <a href="#"><div class="icon"><img src="imagens inverno/mensagem.png" alt="Email"></div></a>
+          </div>
+          <input type="email" placeholder="Informe seu E-mail" class="email-input">
+      </div>
+      <nav class="footer-nav">
+          <a href="#">Home</a>
+          <a href="#">Produtos</a>
+          <a href="#">Sobre nós</a>
+      </nav>
             </div>
         </div>
     </footer>
