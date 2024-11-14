@@ -6,13 +6,13 @@
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color: #ffff;
 }
 
 header {
     background-color: #fff;
     padding: 10px;
-    border-bottom: 5px solid #2a5c3f;
+    /* border-bottom: 5px solid #285041; */
 }
 
 .navbar {
@@ -25,7 +25,7 @@ header {
     font-size: 24px;
     background: none;
     border: none;
-    color: #3f614b;
+    color: #285041;
     cursor: pointer;
 }
 
@@ -106,7 +106,7 @@ header {
   }
   
   footer {
-    background-color: #f4f4f4;
+    background-color: #ffff;
     padding: 25px;
   }
   
