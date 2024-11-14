@@ -1,75 +1,82 @@
+/* Header */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  header {
-    width: 100%;
-    background-color: #ffffff;
-    padding: 10px 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding-top: 60px; /* Ajuste conforme a altura da header */
+}
+
+header {
+  position: fixed; /* Fixa a header no topo */
+  top: 0;          /* Posiciona no topo da página */
+  width: 100%;     /* Faz a header ocupar toda a largura da página */
+  background-color: white; /* Adicione uma cor de fundo, se necessário */
+  z-index: 1000;   /* Coloca a header acima dos outros elementos */
+  padding: 10px 20px; /* Ajuste o padding conforme necessário */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-icon span {
+  display: flex;
+  width: 25px;
+  height: 3px;
+  background-color: #285041;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-icons img {
+  width: 24px;
+  height: auto;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
   }
 
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .menu-icon {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-  
-  .menu-icon span {
-    display: flex;
-    width: 25px;
-    height: 3px;
-    background-color: #2c472c;
-  }
-  
   .logo img {
-    width: 80px;
-    height: auto;
+    width: 30px;
   }
-  
-  .nav-icons {
-    display: flex;
-    gap: 40px;
-  }
-  
+
   .nav-icons img {
-    width: 24px;
-    height: auto;
-    cursor: pointer;
+    width: 20px;
   }
-  
-  @media (max-width: 768px) {
-    .navbar {
-      padding: 0 20px;
-    }
-  
-    .logo img {
-      width: 30px;
-    }
-  
-    .nav-icons img {
-      width: 20px;
-    }
-  }
-.cart-icon {
-    font-size: 40px;
-    color: #2c472c;
 }
+
+
+.cart-icon {
+  font-size: 40px;
+  color: white;
+}
+
 
 /* frutas */
 body {
@@ -91,12 +98,13 @@ h1 {
   color: #3a5f3a;
   font-size: 24px;
   margin-bottom: 20px;
+  padding-top: 45px;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 55px;
 }
 
 .product {
@@ -221,7 +229,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-top: 30px;
     padding: 10px;
 }
 
