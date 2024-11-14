@@ -30,14 +30,14 @@ h1 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: #427653;
+    color: #3a5f3a;
 }
 
 .product img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: #42765374;
+    background-color: #d2e3d2;
     padding: 10px;
 }
 

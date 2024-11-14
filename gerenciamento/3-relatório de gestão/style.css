@@ -19,7 +19,7 @@ body {
 header {
   width: 100%;
   background-color: #ffffff;
-  padding: 10px 0;
+  padding: 10px;
 }
 
 
@@ -46,13 +46,14 @@ header {
 }
 
 .logo img {
-  width: 80px;
+  width: 70px;
   height: auto;
 }
 
 .nav-icons {
   display: flex;
-  gap: 40px;
+  gap: 35px;
+  padding-left: 1200px;
 }
 
 .nav-icons img {
@@ -95,3 +96,4 @@ header {
   height: 1px;
   margin-top: 10px;
 }
+
