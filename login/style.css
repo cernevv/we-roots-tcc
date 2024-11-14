@@ -2,17 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "League Spartan", sans-serif;
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color: #fff;
 }
 
 header {
     background-color: #fff;
     padding: 10px;
-    border-bottom: 5px solid #2a5c3f;
 }
 
 .navbar {
@@ -47,9 +46,9 @@ header {
 
 .login-box,
 .social-login {
-    background-color: #577d5b;
+    background-color: #427653d8;
     padding: 50px;
-    border-radius: 8px;
+    border-radius: 20px;
     color: #fff;
     margin: 0px;
     width: 500px;
@@ -57,7 +56,7 @@ header {
 }
 
 .login-box {
-    background-color: #285041;
+    background-color: #285041da;
 }
 
 .login-form label {
@@ -71,7 +70,7 @@ header {
     padding: 10px;
     margin-bottom: 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
 }
 
 .extras {
@@ -83,33 +82,42 @@ header {
 .login-btn {
     width: 100%;
     padding: 10px;
-    background-color: #2a5c3f;
-    color: #fff;
+    background-color: #fff;
+    color: #285041;
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
     cursor: pointer;
 }
 
 .social-login button {
     width: 100%;
-    padding: 10px;
+    padding: 14px;
     margin-bottom: 10px;
     background-color: #3f614b;
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
     cursor: pointer;
+
 }
 
 .social-login .google {
     background-color: #fff;
+    color: #285041;
+    font-size: medium;
+    padding: 6px;
+    
 }
 
 .social-login .twitter {
     background-color: #fff;
+    color: #285041;
+    font-size:medium;
 }
 
 .social-login .phone {
     background-color: #fff;
+    color: #285041;
+    font-size: medium;
 }
 
 .admin-link {
@@ -117,4 +125,15 @@ header {
     font-size: 12px;
     display: block;
     margin-top: 10px;
+}
+
+.social-login{
+    height: 388.2px;
+
+}
+
+.social-login img{
+    width: 30px;
+    height: 30px;
+    margin-right: 170px;
 }
