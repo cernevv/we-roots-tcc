@@ -12,7 +12,7 @@ body {
 header {
     background-color: #fff;
     padding: 10px;
-    border-bottom: 5px solid #2a5c3f; /* Linha verde no final do header */
+    
 }
 
 .navbar {
@@ -46,7 +46,7 @@ header {
 }
 
 .login-box {
-    background-color: #3f614b;
+    background-color: #285041c5;
     padding: 60px;
     border-radius: 25px;
     color: #fff;
@@ -67,24 +67,24 @@ header {
 
 .login-form input {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
 }
 
 .login-btn {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     background-color: #fff;
     color: #2a5c3f;
     border: none;
-    border-radius: 4px;
+    border-radius: 70px;
     cursor: pointer;
     font-weight: bold;
     margin-top: 40px;
 }
 
 .login-btn:hover {
-    background-color: #244933;
+    background-color: #ffffff9f;
 }
