@@ -109,12 +109,12 @@ header {
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
 }
 
 .intercalate-section {
   padding: 40px 0;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
 }
 
 .intercalate-container {
@@ -220,6 +220,7 @@ footer {
   font-size: 1.5rem;
   font-weight: 600;
   margin: 0;
+  color: #427653;
 }
 
 .footer-social {
