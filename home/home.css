@@ -184,7 +184,8 @@ header {
     color: #285041;
     justify-content: center;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 50px;
+    font-size: 25px;
   }
 
   .seasons-container {
