@@ -96,8 +96,7 @@ header {
     color: #285041;
     font-optical-sizing: auto;
     font-weight: 800;
-    font-style: normal;
-    
+    font-style: normal;    
   }
 
   .linha{
@@ -142,7 +141,7 @@ header {
   .menu-icon div {
     width: 100%;
     height: 4px;
-    background-color: #2d4c2d;
+    background-color: #274227;
   }
 
   /* Menu oculto por padrão */
@@ -151,10 +150,11 @@ header {
     flex-direction: column;
     position: absolute;
     top: 60px;
-    right: 1301px;
-    background-color: #427653de;
+    right: 1250px;
+    background-color: #427653;
     width: 200px;
     height: 170px;
+    border-radius: 20px;
   }
 
   .menu a {
