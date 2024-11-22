@@ -10,10 +10,74 @@ body {
 }
 
 header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #E5E7EB;
+    width: 100%;
+  }
+  
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 40px 1fr 80px;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .menu-btn {
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu-btn:hover {
+    opacity: 0.7;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  .header-right {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .user-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .cart-icon:hover,
+  .user-icon:hover {
+    opacity: 0.7;
+  }
+/* header {
     background-color: #ffff;
     padding: 10px;
     /* border-bottom: 5px solid #2a5c3f; Linha verde abaixo do header */
-}
+*/
 
 .navbar {
     display: flex;
