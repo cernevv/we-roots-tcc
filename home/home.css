@@ -32,11 +32,11 @@ header {
 
 .slider {
     margin-top: 20px;
-    background-image: url(imagens/sliderhome.png);
+    background-image: url(imagens/Seu\ jardim\ \(7\).png);
     background-size: cover; /* Ajusta para cobrir toda a área */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Impede a repetição */
-    height: 650px; /* Defina a altura da seção conforme necessário */
+    height: 725px; /* Defina a altura da seção conforme necessário */
     display: flex;
     align-items: center; /* Centraliza verticalmente */
     justify-content: center; /* Centraliza horizontalmente */
@@ -50,18 +50,15 @@ header {
   .box {
     width: 100px;
     height: 100px;
-    
     text-align: right;
     padding-left: 215px;
     padding-top: 60px;
     font: bold;
     color: #285041;
-
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
-
   }
 
   .linha{

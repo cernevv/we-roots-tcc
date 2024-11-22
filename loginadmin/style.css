@@ -51,7 +51,6 @@ header {
     border-radius: 25px;
     color: #fff;
     width: 500px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .login-form h2 {
