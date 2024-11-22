@@ -31,7 +31,7 @@ header {
 /* Slider */
 
 .slider {
-    margin-top: 20px;
+    margin-top: 0px;
     background-image: url(imagens/sliderhome.png);
     background-size: cover; /* Ajusta para cobrir toda a área */
     background-position: center; /* Centraliza a imagem */
