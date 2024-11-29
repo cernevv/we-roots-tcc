@@ -35,3 +35,24 @@ let mainF = (e) => {
 }
 
 window.addEventListener("load", mainF);
+
+// Em login.html
+const form = document.getElementById('loginForm');
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Simulação de verificação de credenciais (substituir por sua lógica de autenticação)
+    if (username === 'usuario' && password === 'senha') {
+        sessionStorage.setItem('usuario', JSON.stringify({
+            nome: 'Seu Nome',
+            cpf: '123.456.789-10',
+            email: 'seu@email.com',
+            endereco: 'Seu Endereço'
+        }));
+        window.location.href = 'cadastro.html';
+    } else {
+        alert('Usuário ou senha inválidos');
+    }
+});
