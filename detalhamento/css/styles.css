@@ -717,3 +717,74 @@ footer {
         font-size: 0.9rem;
     }
 }
+
+.menu-icon {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .menu-icon div {
+    width: 100%;
+    height: 4px;
+    background-color: #274227;
+  }
+
+  /* Menu oculto por padrão */
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 1250px;
+    background-color: #427653;
+    width: 200px;
+    height: 170px;
+    border-radius: 20px;
+  }
+
+  .menu a {
+    padding: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-style: normal;
+    font-optical-sizing: auto;
+    padding-top: 20px;
+  }
+
+  /* Classe para exibir o menu */
+  .menu.show {
+    display: flex;
+  }
+
+  .menu-btn {
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu-btn:hover {
+    opacity: 100%;
+  }
+
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 40px 1fr 80px;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .linha{
+    color: #fff;
+    width: 200px;
+  }
