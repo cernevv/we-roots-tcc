@@ -10,19 +10,35 @@
 
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="carrinho.css">
+    <link rel="stylesheet" href="src/css/responsive.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
 </head>
 <body>
     <!-- Cabeçalho -->
     <header>
-        <div class="header-container">
+        <div class="header-container" onclick="toggleMenu()">
             <button class="menu-btn" aria-label="Menu">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 12H21" stroke="#2C5530" stroke-width="2" stroke-linecap="round"/>
                     <path d="M3 6H21" stroke="#2C5530" stroke-width="2" stroke-linecap="round"/>
                     <path d="M3 18H21" stroke="#2C5530" stroke-width="2" stroke-linecap="round"/>
+                    
                 </svg>
+                <div class="menu" id="menu">
+                    <a href="/sobre nós/sobrenós.html">Sobre nós</a>
+                    <hr class="linha">
+                    <a href="/produtos/inverno.html">Produtos</a>
+                    <hr class="linha">
+                    <a href="/cadastro/cadastro.html">Sua conta</a>
+                  </div>
             </button>
+
+            <script>
+                function toggleMenu() {
+                  const menu = document.getElementById('menu');
+                  menu.classList.toggle('show');
+                }
+            </script>
             
             <div class="logo-container">
                 <a href="/home/home.html"><img src="./img/logo.png" alt="Logo" class="logo"></a>
@@ -188,6 +204,7 @@
     <!-- Botão continuar -->
     <div class="continue-button">
         <button class="btn-continue">CONTINUAR PARA PAGAMENTO</button>
+        <a href="/produtos/inverno.html"><button class="btn-continue-2">CONTINUAR COMPRANDO</button></a>
     </div>
 
     <!-- Resumo dos valores -->
