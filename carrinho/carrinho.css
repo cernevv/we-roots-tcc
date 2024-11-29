@@ -269,8 +269,8 @@ header {
 .btn-continue {
     width: 100%;
     padding: 0.90rem;
-    background-color: #90A793;
-    color: #2C5530;
+    background-color: #2C5530;
+    color: #fff;
     border: none;
     border-radius: 8px;
     font-size: 0.9rem;

@@ -263,6 +263,7 @@ body {
     margin-bottom: 0.5rem;
     color: var(--primary-color);
     font-size: 0.9rem;
+    color: #285041;
 }
 
 .summary-row.total {
