@@ -88,14 +88,12 @@ header {
     gap: 1px; /* espaço entre os elementos */
   }
   .box {
-    width: 100px;
+    width: 50px;
     height: 100px;
     padding-left: 215px;
     font: bold;
     color: #285041;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;    
+      
   }
 
   .linha{
@@ -473,4 +471,32 @@ footer {
       padding: 0.7rem;
       font-size: 0.9rem;
   }
+}
+
+.container {
+  display: flex;
+  justify-content: space-around; /* Distribui os elementos uniformemente */
+  flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
+  text-align: center; /* Centraliza os textos */
+}
+
+.box {
+  display: flex;
+  flex-direction: column; /* Coloca o texto acima da imagem */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  margin: 10px; /* Adiciona espaçamento entre os elementos */
+  padding-right:90px;
+}
+
+.box p {
+  margin: 0 0 5px; /* Espaçamento entre o texto e a imagem */
+  font-size: 20px; /* Ajusta o tamanho da fonte */
+  font-weight: bold; /* Deixa o texto em negrito */
+  color: #285041;
+}
+
+.box img {
+  width: 200px; /* Ajusta o tamanho da imagem */
+  height: 200px; /* Mantém a proporção da imagem */
+  border-radius: 5px; /* Adiciona bordas arredondadas às imagens */
 }
