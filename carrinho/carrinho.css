@@ -128,7 +128,7 @@ header {
 .product-image {
     width: 150px;
     height: 150px;
-    background-color: #E8F5E9;
+    background-color: #42765388;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -272,7 +272,7 @@ header {
     background-color: #2C5530;
     color: #fff;
     border: none;
-    border-radius: 8px;
+    border-radius: 20px;
     font-size: 0.9rem;
     text-transform: uppercase;
     cursor: pointer;
@@ -283,7 +283,7 @@ header {
     padding: 0.90rem;
     color: #2C5530;
     border: none;
-    border-radius: 8px;
+    border-radius: 20px;
     font-size: 0.9rem;
     text-transform: uppercase;
     cursor: pointer;
@@ -353,7 +353,7 @@ header {
 }
 
 .pix-logo {
-    height: 30px;
+    height: 15px;
     width: auto;
     margin-top: 1rem;
 }

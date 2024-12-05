@@ -287,7 +287,17 @@ body {
     background-color: #d2e3d8;
   }
 
+  .botao p{
+    font-size: 12px;
+    color: #666;
+    margin: 10px 0;
+  }
 
+  .pix-logo {
+    height: 15px;
+    width: auto;
+    margin-top: 1rem;
+}
 
   /* Footer */
 footer {
